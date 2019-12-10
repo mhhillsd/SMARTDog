@@ -10,11 +10,9 @@ const app = express();
 
 // Utilize Express to monitor the json server API
 server.use(middlewares);
-server.use("/", router);
+server.use("/api/", router);
+server.use(express.static(path.join(__dirname, "../../build")));
+server.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "../../build/index.html"));
+});
 server.listen(port, () => console.log(`Server started on port ${port}`));
-// //* modify
-// console.log(path.join(__dirname, "../../build"));
-// app.use(express.static(path.join(__dirname, "build")));
-// app.get("/", function(req, res) {
-//   res.sendFile(path.join(__dirname, "../../build", "index.html"));
-// });

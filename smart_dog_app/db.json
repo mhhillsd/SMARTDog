@@ -1,19 +1,8 @@
 {
   "users": [
     {
-      "email": "this@this.com",
-      "userInfo": {
-        "first": "Kevin",
-        "last": "Sprigg",
-        "address": "hold",
-        "city": "or",
-        "state": "otherh",
-        "zipCode": "92117"
-      },
-      "id": 1
-    },
-    {
       "email": "a@b.com",
+      "device": "Michael",
       "userInfo": {
         "first": "",
         "last": "",
@@ -22,36 +11,95 @@
         "state": "",
         "zipCode": ""
       },
-      "id": 2
-    },
-    {
-      "email": "a@a.com",
-      "userInfo": {
-        "first": "",
-        "last": "",
-        "address": "",
-        "city": "",
-        "state": "",
-        "zipCode": ""
-      },
-      "id": 5
-    },
-    {
-      "email": "g@g.com",
-      "device": "transmitter",
-      "userInfo": {
-        "first": "",
-        "last": "",
-        "address": "",
-        "city": "",
-        "state": "",
-        "zipCode": ""
+      "dogInfo": {
+        "dogName": "This",
+        "dogBreed": "Dog"
       },
       "coords": {
         "lat": 0,
         "lng": 0
       },
-      "id": 7
+      "id": 2
+    },
+    {
+      "email": "g@g.com",
+      "device": "transmitter",
+      "userInfo": {
+        "first": "Brandon",
+        "last": "Veltre",
+        "address": "Montezuma hall",
+        "city": "SAN DIEGO",
+        "state": "CA",
+        "zipCode": "92182",
+        "phone": "16199775347"
+      },
+      "dogInfo": {
+        "dogName": "Francis",
+        "dogBreed": "German Shepherd",
+        "dogEscaped": false
+      },
+      "coords": {
+        "lat": 32.7737274,
+        "lng": -117.0688793
+      },
+      "id": 7,
+      "mapRadius": 80,
+      "addressCoords": {
+        "addressLat": 32.7738958,
+        "addressLng": -117.0693708
+      }
+    },
+    {
+      "email": "this@this.com",
+      "device": "",
+      "userInfo": {
+        "first": "",
+        "last": "",
+        "address": "1556 East main st",
+        "city": "el cajon",
+        "state": "CA",
+        "zipCode": "92021"
+      },
+      "dogInfo": {
+        "dogName": "Fritz",
+        "dogBreed": ""
+      },
+      "coords": {
+        "lat": 0,
+        "lng": 0
+      },
+      "addressCoords": {
+        "addressLat": 32.8060049,
+        "addressLng": -116.9248255
+      },
+      "mapRadius": "",
+      "id": 8
+    },
+    {
+      "email": "a@a.com",
+      "device": "",
+      "userInfo": {
+        "first": "",
+        "last": "",
+        "address": "sdsu",
+        "city": "",
+        "state": "",
+        "zipCode": "92115"
+      },
+      "dogInfo": {
+        "dogName": "",
+        "dogBreed": ""
+      },
+      "coords": {
+        "lat": 1,
+        "lng": 0
+      },
+      "addressCoords": {
+        "addressLat": 32.77572170000001,
+        "addressLng": -117.0718893
+      },
+      "mapRadius": 10,
+      "id": 9
     }
   ]
 }

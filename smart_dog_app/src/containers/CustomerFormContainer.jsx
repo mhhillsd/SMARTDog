@@ -25,6 +25,7 @@ const CustomerFormContainer = props => {
         handlechange={props.handleInputChange}
       />
       <Input
+        required={true}
         type={"text"}
         title={"Address"}
         name={"address"}
@@ -49,10 +50,20 @@ const CustomerFormContainer = props => {
         handlechange={props.handleInputChange}
       />
       <Input
+        required={true}
         type={"text"}
         title={"Zip Code"}
         name={"zipCode"}
         value={props.values.zipCode}
+        placeholder={""}
+        handlechange={props.handleInputChange}
+      />
+      <Input
+        required={true}
+        type={"text"}
+        title={"Phone Number (Including Country Code, no spaces or dashes)"}
+        name={"phone"}
+        value={props.values.phone}
         placeholder={""}
         handlechange={props.handleInputChange}
       />

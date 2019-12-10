@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, Tabs, Tab } from "react-mdl";
+import Footer from "../components/Footer";
 
 class Works extends Component {
   constructor(props) {
@@ -11,15 +12,18 @@ class Works extends Component {
     if (this.state.activeTab === 0) {
       return (
         <div style={{ width: "100%", margin: "auto" }}>
-          <Grid className="range-connectivity-grid">
+          <Grid className="tab-img">
             <Cell col={12}>
-              <img
-                src="https://tinyurl.com/y255hvlk"
-                alt="rang-conn"
-                className="tab-img"
-              />
+              <div>
+                <iframe
+                  src="https://youtube.com/embed/3st8zI1uBqw"
+                  className="tab-img"
+                  alt="tabimg"
+                />
+              </div>
               <div className="banner-header">
-                <h1>Range + Connectivity</h1>
+                <h1>Demo</h1>
+                <p>Hope you guys enjoyed the demo</p>
               </div>
             </Cell>
           </Grid>
@@ -28,15 +32,16 @@ class Works extends Component {
     } else if (this.state.activeTab === 1) {
       return (
         <div style={{ width: "100%", margin: "auto" }}>
-          <Grid className="tracking-grid">
+          <Grid className="img-grid">
             <Cell col={12}>
               <img
-                src="https://tinyurl.com/y6oo5daj"
-                alt="tracking"
+                src="https://tinyurl.com/y255hvlk"
+                alt="rang-conn"
                 className="tab-img"
               />
               <div className="banner-header">
-                <h1>Tracking</h1>
+                <h1>Range + Connectivity</h1>
+                <h3>Coming 12/11/2019</h3>
               </div>
             </Cell>
           </Grid>
@@ -45,7 +50,25 @@ class Works extends Component {
     } else if (this.state.activeTab === 2) {
       return (
         <div style={{ width: "100%", margin: "auto" }}>
-          <Grid className="specs-grid">
+          <Grid className="img-grid">
+            <Cell col={12}>
+              <img
+                src="https://tinyurl.com/y6oo5daj"
+                alt="tracking"
+                className="tab-img"
+              />
+              <div className="banner-header">
+                <h1>Tracking</h1>
+                <h3>Coming 12/11/2019</h3>
+              </div>
+            </Cell>
+          </Grid>
+        </div>
+      );
+    } else if (this.state.activeTab === 3) {
+      return (
+        <div style={{ width: "100%", margin: "auto" }}>
+          <Grid className="img-grid">
             <Cell col={12}>
               <img
                 src="https://tinyurl.com/y6bmzktr"
@@ -54,6 +77,7 @@ class Works extends Component {
               />
               <div className="banner-header">
                 <h1>Technical Specifications</h1>
+                <h3>Coming 12/11/2019</h3>
               </div>
             </Cell>
           </Grid>
@@ -64,17 +88,20 @@ class Works extends Component {
 
   render() {
     return (
-      <div className="category-tabs">
-        <Tabs
-          activeTab={this.state.activeTab}
-          onChange={tabId => this.setState({ activeTab: tabId })}
-          ripple
-        >
-          <Tab>Range + Connectivity</Tab>
-          <Tab>Tracking</Tab>
-          <Tab>Technical Specifications</Tab>
-        </Tabs>
-        <section className="features-grid">{this.toggleCategories()}</section>
+      <div>
+        <div className="category-tabs">
+          <Tabs
+            activeTab={this.state.activeTab}
+            onChange={tabId => this.setState({ activeTab: tabId })}
+            ripple
+          >
+            <Tab>Demo</Tab>
+            <Tab>Range + Connectivity</Tab>
+            <Tab>Tracking</Tab>
+            <Tab>Technical Specifications</Tab>
+          </Tabs>
+          <section className="features-grid">{this.toggleCategories()}</section>
+        </div>
       </div>
     );
   }
